@@ -23,3 +23,4 @@ jobs:
           tags: |
             dunaalsulaiman/flask:latest
             dunaalsulaiman/flask:${{ github.sha }}
+          cache-from: dunaalsulaiman/flask:latest
