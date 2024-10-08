@@ -24,3 +24,5 @@ jobs:
             dunaalsulaiman/flask:latest
             dunaalsulaiman/flask:${{ github.sha }}
           cache-from: dunaalsulaiman/flask:latest
+          cache-to: type-inline
+    
