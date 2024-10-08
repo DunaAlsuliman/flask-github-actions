@@ -7,10 +7,13 @@ jobs:
     runs-on: ubuntu-latest
 
     steps:
+      - name: Checkout
+        uses: actions/checkout@v2
+
       - name: Running Unit Tests
         run: |
-          docker compose up
-          docker compose run test
+          docker-compose -f "docker-compose.yml" up
+          docker-compose run test
 
           
 
