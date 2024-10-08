@@ -12,8 +12,8 @@ jobs:
 
       - name: Running Unit Tests
         run: |
-          docker-compose -f "docker-compose.yml" up
-          docker-compose run test
+          docker compose -f "docker-compose.yml" up
+          docker compose run test
 
           
 
