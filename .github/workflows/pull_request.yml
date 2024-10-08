@@ -12,7 +12,7 @@ jobs:
 
       - name: Running Unit Tests
         run: |
-          docker compose run test pytest
+          docker compose run test 
 
           
 
