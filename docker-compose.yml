@@ -2,5 +2,5 @@ services:
   test: 
     build: .
     volumes: 
-      - ./:./
+      - .:/app
     command: pytset
